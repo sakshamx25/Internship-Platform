@@ -1,0 +1,10 @@
+{
+  "name": "hunarintern-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HunarIntern static site with Netlify Functions for the Roast My Resume tool.",
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.7.2"
+  }
+}

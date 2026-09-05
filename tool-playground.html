@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML/CSS/JS Playground — HunarIntern</title>
+<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+<meta name="description" content="Write HTML, CSS and JavaScript together and preview it live — free browser playground from HunarIntern.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Announcement Ticker -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <a href="internship.html" class="ticker-item"><span class="ticker-tag">NEW</span> Applications open for Web Development &amp; AI domains</a>
+    <a href="tools.html" class="ticker-item"><span class="ticker-tag">TOOL</span> Try our Developer Tools — Roast My Resume, formatters &amp; more</a>
+    <a href="https://hunarinternverify.pages.dev/" target="_blank" rel="noopener" class="ticker-item"><span class="ticker-tag">VERIFY</span> Check your certificate instantly</a>
+    <a href="internship.html" class="ticker-item"><span class="ticker-tag">POPULAR</span> Cloud Computing internship — 4–8 weeks</a>
+    <a href="internship.html" class="ticker-item"><span class="ticker-tag">NEW</span> Applications open for Web Development &amp; AI domains</a>
+    <a href="tools.html" class="ticker-item"><span class="ticker-tag">TOOL</span> Try our Developer Tools — Roast My Resume, formatters &amp; more</a>
+    <a href="https://hunarinternverify.pages.dev/" target="_blank" rel="noopener" class="ticker-item"><span class="ticker-tag">VERIFY</span> Check your certificate instantly</a>
+    <a href="internship.html" class="ticker-item"><span class="ticker-tag">POPULAR</span> Cloud Computing internship — 4–8 weeks</a>
+  </div>
+</div>
+
+<!-- Site Header -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/img/headerlogo.png" alt="HunarIntern logo" class="mark"></a>
+    <nav class="nav-desktop">
+      <a href="index.html">Home</a>
+      <div class="nav-mega-wrap">
+        <a href="internship.html">Internship <span class="caret">▾</span></a>
+        <div class="nav-mega">
+          <div class="nav-mega-col">
+            <h4>Development</h4>
+            <a href="internship.html#domain-grid">Web Development</a>
+            <a href="internship.html#domain-grid">Python Development</a>
+            <a href="internship.html#domain-grid">Cloud Computing</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4>Data &amp; AI</h4>
+            <a href="internship.html#domain-grid">Data Science</a>
+            <a href="internship.html#domain-grid">Artificial Intelligence</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4>Design &amp; Business</h4>
+            <a href="internship.html#domain-grid">UI/UX Designing</a>
+            <a href="internship.html#domain-grid">Digital Marketing</a>
+          </div>
+        </div>
+      </div>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="tools.html" class="active">Developer Tools</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://hunarinternverify.pages.dev/" target="_blank" rel="noopener" class="btn btn-ghost">Verify Certificate</a>
+      <a href="internship.html" class="btn btn-primary">Start Internship!</a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer">
+  <div class="panel">
+    <button class="close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="internship.html">Internship</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="tools.html">Developer Tools</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="https://hunarinternverify.pages.dev/" target="_blank" rel="noopener" class="btn btn-ghost">Verify Certificate</a>
+    <a href="internship.html" class="btn btn-primary" style="margin-top:16px;text-align:center;">Start Internship!</a>
+  </div>
+</div>
+
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Playground</div>
+    <h1>HTML / CSS / JS Playground</h1>
+    <p class="sub">Write code across all three and preview it live, right in your browser.</p>
+    <p style="margin-top:14px;"><a href="tools.html" class="btn btn-ghost">&larr; All Developer Tools</a></p>
+  </div>
+</section>
+
+<section class="section-tight" id="tool-playground">
+  <div class="wrap">
+    <div class="playground-grid">
+      <div class="playground-editors">
+        <div class="tool-panel-col">
+          <label class="tool-label">HTML</label>
+          <textarea class="tool-textarea tool-textarea-sm" id="pg-html"><h2>Hello HunarIntern</h2>
+<p>Edit this and click Run.</p></textarea>
+        </div>
+        <div class="tool-panel-col">
+          <label class="tool-label">CSS</label>
+          <textarea class="tool-textarea tool-textarea-sm" id="pg-css">body{ font-family: sans-serif; color:#FF6B2C; }</textarea>
+        </div>
+        <div class="tool-panel-col">
+          <label class="tool-label">JavaScript</label>
+          <textarea class="tool-textarea tool-textarea-sm" id="pg-js">console.log('Playground ready');</textarea>
+        </div>
+      </div>
+      <div class="playground-preview-col">
+        <label class="tool-label">Live Preview</label>
+        <iframe id="pg-preview" class="playground-iframe" title="Live preview"></iframe>
+      </div>
+    </div>
+    <div class="tool-actions">
+      <button class="btn btn-primary" id="pg-run-btn">Run ▶</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="help-block">
+      <div>
+        <h3>Want a tool that's not here yet?</h3>
+        <p>Tell us what you're looking for and we'll consider adding it.</p>
+      </div>
+      <a href="https://wa.me/918279365862?text=Hi%2C%20I%27d%20like%20to%20suggest%20a%20developer%20tool." target="_blank" rel="noopener" class="btn btn-wa">Suggest a Tool</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/img/Hunar.png" alt="HunarIntern logo" class="mark"></a>
+        <p>Structured, mentor-led virtual internships that turn effort into a real, provable skillset.</p>
+        <div class="footer-contact">
+          <span>hunarintern@gmail.com</span>
+          <span>+91 82793 65862</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/hunarintern/posts/" target="_blank" rel="noopener" aria-label="LinkedIn" class="sm-linkedin">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+          </a>
+          <a href="https://instagram.com/hunarintern" target="_blank" rel="noopener" aria-label="Instagram" class="sm-instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.21 1.85.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.87.34 1.85.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.5-.34 1.85-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.87.3-1.85.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.21-1.85-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.13-.35-.3-.87-.34-1.85-.05-1.05-.06-1.37-.06-4.04s.01-2.99.06-4.04c.04-.98.21-1.5.34-1.85.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.87-.3 1.85-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.25a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9zm0 8.17a3.22 3.22 0 1 1 0-6.44 3.22 3.22 0 0 1 0 6.44zm6.3-8.37a1.16 1.16 0 1 1-2.31 0 1.16 1.16 0 0 1 2.31 0z"/></svg>
+          </a>
+          <a href="https://youtube.com/@hunarintern" target="_blank" rel="noopener" aria-label="YouTube" class="sm-youtube">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 0 0-2.1-2.12C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.57a3 3 0 0 0-2.1 2.12A31 31 0 0 0 0 12a31 31 0 0 0 .5 5.81 3 3 0 0 0 2.1 2.12c1.9.57 9.4.57 9.4.57s7.5 0 9.4-.57a3 3 0 0 0 2.1-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.81zM9.6 15.5v-7l6.3 3.5z"/></svg>
+          </a>
+          <a href="https://wa.me/918279365862" target="_blank" rel="noopener" aria-label="WhatsApp" class="sm-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.01 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12.01 22c5.5 0 10-4.48 10-10s-4.5-10-9.99-10zm5.83 14.24c-.25.7-1.25 1.29-2.03 1.46-.55.11-1.26.2-3.66-.79-2.98-1.24-4.9-4.27-5.05-4.47-.15-.2-1.2-1.6-1.2-3.05s.75-2.16 1.02-2.46c.27-.3.58-.37.77-.37.2 0 .4 0 .57.01.19.01.44-.07.68.53.25.62.86 2.14.93 2.29.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.26 1.63 2.04 1.12 1 2.06 1.32 2.36 1.47.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.57.35.07.13.07.72-.18 1.42z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="tools.html">Developer Tools</a>
+        <a href="contact.html">Certificate Verify</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HunarIntern. All rights reserved.</span>
+      <span>Made for students, by people who've hired them.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tools.js"></script>
+</body>
+</html>
